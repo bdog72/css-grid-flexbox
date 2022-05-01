@@ -187,6 +187,20 @@ div.showcase__content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  animation: hero 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@keyframes hero {
+  0% {
+    transform: translateX(100rem) rotate(360deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .showcase__content--title {
@@ -210,6 +224,9 @@ div.showcase__content {
   font-weight: 600;
   letter-spacing: 0.2rem;
   position: relative;
+
+  z-index: 1;
+  text-align: center;
 }
 
 .showcase__content--link:link::after,
@@ -223,19 +240,27 @@ div.showcase__content {
   background-color: var(--primary-color);
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform 0.5s;
+  transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  z-index: -1;
 }
 
 .showcase__content--link:hover::after,
 .showcase__content--link:active::after {
   transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* -*-*-*-**-*-*-*-* (max-width: 900px) Mark *-**-*-*-*-**-*-*-*-*/
+@media screen and (max-width: 900px) {
+  section#showcase {
+    background-position: 100%;
+    align-items: flex-end;
+  }
 }
 
 /*-*-*-*-**-*-*-*-* (max-width:610px) Mark *-**-*-*-*-**-*-*-*-*/
-
 @media screen and (max-width: 610px) {
-  /*-*-*-*-**-*-*-*- Main Nav Header *-**-*-*-*-**-*/
-
   header#header {
     position: absolute;
   }
@@ -333,5 +358,10 @@ div.showcase__content {
 
   ul.header__main-nav--links li.fade {
     opacity: 1;
+  }
+
+  section#showcase {
+    background-position: 80%;
+    align-items: flex-end;
   }
 }
