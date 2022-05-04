@@ -293,6 +293,17 @@ section#work {
   filter: sepia(80%);
 }
 
+/* *********************** Work Section ************************* */
+section#about-me {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  padding: 2rem;
+  background-color: var(--secondary-color);
+}
+
 /* -*-*-*-**-*-*-*-* (max-width: 900px) Mark *-**-*-*-*-**-*-*-*-*/
 @media screen and (max-width: 900px) {
   section#showcase {
