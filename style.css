@@ -463,7 +463,6 @@ section#services {
     right: -30rem;
     background-color: var(--secondary-color);
     text-align: center;
-    /* border: 5px solid #000; s */
   }
 
   .clicked {
@@ -501,7 +500,6 @@ section#services {
   }
 
   ul.header__main-nav--links li {
-    /* border: 1px solid #000; */
     margin-bottom: 4vh;
     margin-left: 6vw;
   }
@@ -550,8 +548,28 @@ section#services {
     opacity: 1;
   }
 
+  /* Showcase / Hero Section */
   section#showcase {
     background-position: 80%;
     align-items: flex-end;
+  }
+
+  /* Services Section */
+  section#services {
+    padding: 6rem 3rem 2rem;
+  }
+
+  .service {
+    padding: calc(1rem + 2vw);
+    margin: 0 0 calc(1rem + 2vw);
+  }
+
+  .services--title {
+    font-size: calc(1.2rem + 2vw);
+    /* color: blue; */
+  }
+
+  .services--para {
+    font-size: calc(0.8rem + 1.5vw);
   }
 }
