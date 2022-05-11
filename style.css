@@ -632,6 +632,23 @@ section#testimonials {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: all 0.35s ease-in-out;
+}
+
+.testimonials__card--content {
+  position: absolute;
+  top: 60%;
+  left: 0;
+}
+
+.testimonials__card--content__title {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.testimonials__card--content__para {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.5rem;
 }
 
 /* -*-*-*-**-*-*-*-* (min-width: 1510px) Mark *-**-*-*-*-**-*-*-*-*/
