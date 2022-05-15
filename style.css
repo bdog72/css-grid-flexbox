@@ -679,6 +679,11 @@ section#testimonials {
   }
 }
 
+section#contact {
+  height: 100vh;
+  background-image: url(img/full-bg-03.jpg);
+}
+
 /* -*-*-*-**-*-*-*-* (max-width: 900px) Mark *-**-*-*-*-**-*-*-*-*/
 @media screen and (max-width: 900px) {
   section#showcase {
