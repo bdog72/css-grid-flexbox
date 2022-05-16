@@ -682,6 +682,10 @@ section#testimonials {
 section#contact {
   height: 100vh;
   background-image: url(img/full-bg-03.jpg);
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 /* -*-*-*-**-*-*-*-* (max-width: 900px) Mark *-**-*-*-*-**-*-*-*-*/
