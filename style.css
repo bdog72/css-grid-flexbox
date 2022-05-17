@@ -688,6 +688,13 @@ section#contact {
   align-items: flex-end;
 }
 
+.contact__form {
+  flex-basis: 40rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
 /* -*-*-*-**-*-*-*-* (max-width: 900px) Mark *-**-*-*-*-**-*-*-*-*/
 @media screen and (max-width: 900px) {
   section#showcase {
