@@ -670,15 +670,6 @@ section#testimonials {
   filter: grayscale(50%);
 }
 
-/* -*-*-*-**-*-*-*-* (min-width: 1510px) Mark *-**-*-*-*-**-*-*-*-*/
-@media screen and (min-width: 1510px) {
-  body {
-    width: 1510px;
-    margin: 0 auto;
-    /* background-color: blue; */
-  }
-}
-
 section#contact {
   height: 100vh;
   background-image: url(img/full-bg-03.jpg);
@@ -693,6 +684,26 @@ section#contact {
 
   display: flex;
   flex-direction: column;
+  background-color: var(--tertiary-color-m);
+}
+
+.contact__form input,
+.contact__form textarea {
+  color: fff;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  padding: 2rem;
+  /* background-color: transparent; */
+}
+
+/* -*-*-*-**-*-*-*-* (min-width: 1510px) Mark *-**-*-*-*-**-*-*-*-*/
+@media screen and (min-width: 1510px) {
+  body {
+    width: 1510px;
+    margin: 0 auto;
+    /* background-color: blue; */
+  }
 }
 
 /* -*-*-*-**-*-*-*-* (max-width: 900px) Mark *-**-*-*-*-**-*-*-*-*/
