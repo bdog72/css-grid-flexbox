@@ -689,12 +689,28 @@ section#contact {
 
 .contact__form input,
 .contact__form textarea {
-  color: fff;
+  color: #fff;
   font-family: 'Indie Flower', cursive;
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
   padding: 2rem;
-  /* background-color: transparent; */
+  background-color: transparent;
+  border: none;
+  border-bottom: var(--secondary-color) solid 0.1rem;
+}
+
+.contact__form input::placeholder,
+.contact__form textarea::placeholder {
+  color: #fff;
+}
+
+.contact__form textarea {
+  height: 30vh;
+}
+
+input[type='submit'] {
+  border: none;
+  cursor: pointer;
 }
 
 /* -*-*-*-**-*-*-*-* (min-width: 1510px) Mark *-**-*-*-*-**-*-*-*-*/
@@ -865,5 +881,9 @@ section#contact {
   .testimonials__card:hover .testimonials__card--content,
   .testimonials__card:active .testimonials__card--content {
     transform-origin: bottom;
+  }
+
+  section#contact {
+    background-position: 10% 5%;
   }
 }
